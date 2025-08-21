@@ -1,5 +1,4 @@
-import React from "react";
-import { Social, Project } from "../constants/types";
+import type { Social, Project } from "../constants/types";
 import { Mail, Github } from "lucide-react";
 
 const DATA = {
@@ -68,7 +67,19 @@ const DATA = {
 };
 
 function Home() {
-  return <div></div>;
+  return (
+    <main>
+      {/* Hero Section */}
+      <section className="flex">
+        <h1 className="flex">
+          {DATA.name}
+          <span className="text-pastel-blue">{DATA.role}</span>
+        </h1>
+      </section>
+      {/* Projects Section */}
+      <section></section>
+    </main>
+  );
 }
 
 export default Home;
