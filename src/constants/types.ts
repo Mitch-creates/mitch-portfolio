@@ -19,6 +19,23 @@ export const DATA = {
   email: "mitchcreates.contact@gmail.com",
   projects: [
     {
+      title: "Learning app (Mobile) -Work in progress-",
+      description:
+        "React Native/Expo MVP: take a photo, OCR the text, highlight parts to get explanations, translations, and TTS. This was built to aid me with learning German.",
+      period: "2025",
+      tags: ["React Native", "Expo", "OCR", "TTS", "Node.js"],
+      links: [
+        {
+          label: "Code",
+          href: "https://github.com/Mitch-creates/learningapp",
+        },
+      ],
+      featured: true,
+      hasDemo: true,
+      demoPath: "/videos/learningapp-demo.mp4",
+      image: "/images/play-demo-learningapp.png",
+    },
+    {
       title: "Holiday Optimizer",
       description:
         "Web app that finds optimal 4–15 day holiday windows by combining public/company holidays with personal leave.",
@@ -48,23 +65,6 @@ export const DATA = {
       ],
       featured: true,
       image: "/images/weeklynews.png",
-    },
-    {
-      title: "Learning app (Mobile) -Work in progress-",
-      description:
-        "React Native/Expo MVP: take a photo, OCR the text, highlight parts to get explanations, translations, and TTS. This was built to aid me with learning German.",
-      period: "2025",
-      tags: ["React Native", "Expo", "OCR", "TTS", "Node.js"],
-      links: [
-        {
-          label: "Code",
-          href: "https://github.com/Mitch-creates/learningapp",
-        },
-      ],
-      featured: true,
-      hasDemo: true,
-      demoPath: "/videos/learningapp-demo.mp4",
-      image: "/images/play-demo-learningapp.png",
     },
     // {
     //   title: "Blogging website",
