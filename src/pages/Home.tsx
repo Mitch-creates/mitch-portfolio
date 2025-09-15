@@ -54,7 +54,7 @@ function Home() {
                   }
                 }}
               >
-                <div className="relative rounded-xl mb-4">
+                <div className="relative rounded-xl mb-4 aspect-video overflow-hidden">
                   <img
                     loading="lazy"
                     className="rounded-xl bg-cover shadow-xl"
