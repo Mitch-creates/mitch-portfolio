@@ -7,6 +7,8 @@ type Project = {
   tags: string[];
   links?: Link[];
   featured?: boolean;
+  hasDemo?: boolean;
+  demoPath?: string;
   image?: string;
 };
 
@@ -48,35 +50,37 @@ export const DATA = {
       image: "/images/weeklynews.png",
     },
     {
-      title: "Learning app (Mobile)",
+      title: "Learning app (Mobile) -Work in progress-",
       description:
-        "React Native/Expo MVP: take a photo, OCR the text, highlight parts to get explanations, translations, and TTS.",
+        "React Native/Expo MVP: take a photo, OCR the text, highlight parts to get explanations, translations, and TTS. This was built to aid me with learning German.",
       period: "2025",
       tags: ["React Native", "Expo", "OCR", "TTS", "Node.js"],
       links: [
         {
           label: "Code",
-          href: "https://github.com/yourhandle/read-and-explain",
-        }, // TODO
+          href: "https://github.com/Mitch-creates/learningapp",
+        },
       ],
       featured: true,
-      image: "/images/coming_soon.jpg",
+      hasDemo: true,
+      demoPath: "/videos/learningapp-demo.mp4",
+      image: "/images/play-demo-learningapp.png",
     },
-    {
-      title: "Blogging website",
-      description:
-        "A platform for sharing articles about reflection and self discovery. Made with Hugo.",
-      period: "2024",
-      tags: ["Hugo", "Javascript", "HTML", "CSS", "Writing", "Research"],
-      links: [
-        { label: "Live", href: "https://michielsblog.com" },
-        {
-          label: "Code",
-          href: "https://github.com/Mitch-creates/Blog",
-        }, // TODO
-      ],
-      featured: true,
-      image: "/images/michielsblog.png",
-    },
+    // {
+    //   title: "Blogging website",
+    //   description:
+    //     "A platform for sharing articles about reflection and self discovery. Made with Hugo.",
+    //   period: "2024",
+    //   tags: ["Hugo", "Javascript", "HTML", "CSS", "Writing", "Research"],
+    //   links: [
+    //     { label: "Live", href: "https://michielsblog.com" },
+    //     {
+    //       label: "Code",
+    //       href: "https://github.com/Mitch-creates/Blog",
+    //     },
+    //   ],
+    //   featured: true,
+    //   image: "/images/michielsblog.png",
+    // },
   ] as Project[],
 };

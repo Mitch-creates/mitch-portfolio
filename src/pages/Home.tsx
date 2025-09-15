@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import { DATA } from "../constants/types";
+import VideoModal from "../components/VideoModal";
+import { useState } from "react";
 
 function Home() {
+  const [activeVideo, setActiveVideo] = useState<string | null>(null);
   return (
     <main className="px-4 md:px-0">
       {/* Hero Section */}
@@ -38,10 +41,18 @@ function Home() {
             .map((project) => (
               <a
                 key={project.title}
-                className="flex flex-col justify-center transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8"
+                className="flex flex-col justify-center transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
                 href={
-                  project.links?.find((link) => link.label === "Live")?.href
+                  project.links?.[0]?.label === "Live"
+                    ? project.links[0].href
+                    : ""
                 }
+                onClick={(e) => {
+                  if (project.hasDemo && project.demoPath) {
+                    e.preventDefault();
+                    setActiveVideo(project.demoPath);
+                  }
+                }}
               >
                 <div className="relative rounded-xl mb-4">
                   <img
@@ -81,6 +92,12 @@ function Home() {
           View all projects
         </Link>
       </section>
+
+      <VideoModal
+        isOpen={!!activeVideo}
+        onClose={() => setActiveVideo(null)}
+        videoSrc={activeVideo || ""}
+      />
     </main>
   );
 }
