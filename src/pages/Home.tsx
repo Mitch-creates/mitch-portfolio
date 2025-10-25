@@ -9,7 +9,7 @@ function Home() {
   return (
     <main className="px-4 md:px-0 pt-[20vh]">
       {/* Hero Section */}
-      <section className="mb-16 pb-16 border-b border-slate-200">
+      <section className="mb-16 pb-16 border-b border-slate-300">
         <h1 className=" text-3xl md:text-4xl font-semibold text-slate-900">
           Moin, I'm Michiel
         </h1>
@@ -18,8 +18,8 @@ function Home() {
         </span>
 
         <p className="pb-4 md:pt-0 pt-10 text-lg text-slate-900">
-          Curiosity-fueled developer combining creativity and technology to
-          craft meaningful digital experiences.
+          Curiosity-fueled developer blending creativity and modern technologies
+          to build meaningful digital experiences.
         </p>
         <Link
           to="/about"
