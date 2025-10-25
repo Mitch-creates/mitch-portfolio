@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <header className="md:hidden flex flex-row fixed justify-between gap-4 pb-16 pt-8 md:pt-16 px-4 md:px-0 items-baseline">
+      <header className="md:hidden flex flex-row fixed justify-between gap-4 pt-8 md:pt-16 px-4 md:px-0 items-baseline bg-slate-50 w-full z-50 opacity-90">
         <Link
           to="/"
           className="tracking-tighter text-sm font-mono font-semibold"

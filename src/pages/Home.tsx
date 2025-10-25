@@ -6,7 +6,7 @@ import { useState } from "react";
 function Home() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   return (
-    <main className="px-4 md:px-0">
+    <main className="px-4 md:px-0 pt-[30vh]">
       {/* Hero Section */}
       <section className="mb-16 pb-16 border-b border-slate-200">
         <h1 className="pb-4 text-3xl md:text-4xl font-semibold text-slate-900">
