@@ -38,19 +38,19 @@ function Header() {
         </Link>
         <nav className="flex gap-4 items-end">
           <Link
-            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
+            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold  inline-block w-fit"
             to="/about"
           >
             About
           </Link>
           <Link
-            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
+            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold  inline-block w-fit"
             to="/projects"
           >
             Projects
           </Link>
           <Link
-            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
+            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold  inline-block w-fit"
             to="/contact"
           >
             Contact
@@ -74,19 +74,19 @@ function Header() {
         </Link>
         <nav className="flex flex-col gap-2 flex-1 justify-center">
           <Link
-            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
+            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold  inline-block w-fit"
             to="/about"
           >
             About
           </Link>
           <Link
-            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
+            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold  inline-block w-fit"
             to="/projects"
           >
             Projects
           </Link>
           <Link
-            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
+            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold  inline-block w-fit"
             to="/contact"
           >
             Contact

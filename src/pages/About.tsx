@@ -5,7 +5,7 @@ function About() {
     <div className="px-4 md:px-0 pt-[20vh]">
       <div className="hidden md:block absolute top-[35vh] right-30">
         <img
-          src="public/images/about-me.jpg"
+          src="images/about-me.jpg"
           alt="Michiel - Software Developer"
           className="w-48 h-48 lg:w-56 lg:h-56 object-cover shadow-lg opacity-90 hover:opacity-100 transition-opacity duration-300"
         />
