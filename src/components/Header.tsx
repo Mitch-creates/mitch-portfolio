@@ -31,7 +31,7 @@ function Header() {
         </nav>
       </header>
 
-      <aside className="hidden fixed md:block top-4 left-8 h-screen w-64">
+      <aside className="hidden fixed md:block top-12 left-12 h-screen w-64">
         <Link
           to="/"
           className="flex tracking-tighter text-sm font-mono font-semibold mb-16"
