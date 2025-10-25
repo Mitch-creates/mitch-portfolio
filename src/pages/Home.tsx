@@ -2,35 +2,37 @@ import { Link } from "react-router-dom";
 import { DATA } from "../constants/types";
 import VideoModal from "../components/VideoModal";
 import { useState } from "react";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
 function Home() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   return (
-    <main className="px-4 md:px-0 pt-[30vh]">
+    <main className="px-4 md:px-0 pt-[20vh]">
       {/* Hero Section */}
       <section className="mb-16 pb-16 border-b border-slate-200">
-        <h1 className="pb-4 text-3xl md:text-4xl font-semibold text-slate-900">
+        <h1 className=" text-3xl md:text-4xl font-semibold text-slate-900">
           Moin, I'm Michiel
-          <span className="block text-xl md:text-2xl font-normal text-slate-600">
-            A Developer from Belgium based in Hamburg.
-          </span>
         </h1>
-        <p className="pb-4 text-lg text-slate-900">
-          Curiosity-fueled developer blending creativity with constant learning
-          and fresh opportunities.
+        <span className="block text-xl md:text-2xl font-normal text-slate-600 pb-4">
+          A Developer from Belgium soon based in Hamburg.
+        </span>
+
+        <p className="pb-4 md:pt-0 pt-10 text-lg text-slate-900">
+          Curiosity-fueled developer combining creativity and technology to
+          craft meaningful digital experiences.
         </p>
         <Link
           to="/about"
-          className="bg-slate-950 text-white px-4 py-2 rounded-full
-        hover:bg-slate-800 group inline-block"
+          className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer"
         >
           Learn more
+          <HiOutlineArrowRight className="w-4 h-4" />
         </Link>
       </section>
       {/* Projects Section */}
       <section className="mb-16">
         <h2 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4 tracking-tighter">
-          Personal Projects
+          Personal Projects.
         </h2>
         <p className="text-slate-700 text-lg mb-6">
           Below is a selection of some of my projects.
@@ -86,10 +88,10 @@ function Home() {
         </div>
         <Link
           to="/projects"
-          className="bg-slate-950 text-white px-4 py-2 rounded-full
-        hover:bg-slate-800 group inline-block"
+          className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer"
         >
           View all projects
+          <HiOutlineArrowRight className="w-4 h-4" />
         </Link>
       </section>
 
