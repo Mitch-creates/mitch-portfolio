@@ -1,8 +1,8 @@
-import { FaDownload } from "react-icons/fa";
+import { MdDownload } from "react-icons/md";
 
 function About() {
   return (
-    <div className="px-4 md:px-0">
+    <div className="px-4 md:px-0 pt-[20vh]">
       <h1 className="text-3xl font-semibold text-slate-900 mb-6 pb-8 border-b border-slate-200">
         About
       </h1>
@@ -21,9 +21,9 @@ function About() {
       <a
         href="/Documents/CV_Michiel_ENGLISH.pdf"
         download="Michiel_Van_de_Vyver_CV.pdf"
-        className="inline-flex items-center gap-2 bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition-colors mb-8"
+        className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer mb-8"
       >
-        <FaDownload size={16} /> Download My CV
+        <MdDownload className="w-4 h-4" /> Download My CV
       </a>
     </div>
   );

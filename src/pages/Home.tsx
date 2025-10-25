@@ -13,7 +13,7 @@ function Home() {
         <h1 className=" text-3xl md:text-4xl font-semibold text-slate-900">
           Moin, I'm Michiel
         </h1>
-        <span className="block text-xl md:text-2xl font-normal text-slate-600 pb-4">
+        <span className="block text-xl md:text-2xl font-normal text-slate-600 pb-10">
           A Developer from Belgium soon based in Hamburg.
         </span>
 
