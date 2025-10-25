@@ -4,4 +4,13 @@
   body {
     @apply bg-slate-50 font-mono;
   }
+  ::selection {
+    background-color: #90ee90;
+    color: palevioletred;
+  }
+
+  ::-moz-selection {
+    background-color: #90ee90;
+    color: whitesmoke;
+  }
 }

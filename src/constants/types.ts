@@ -35,11 +35,11 @@ export const DATA = {
       image: "/images/holidayoptimizer.png",
     },
     {
-      title: "Run 4 Charity",
+      title: "Run 4 Charity -work in progress-",
       description:
-        "A responsive interactive website made for a charity benefit run.",
+        "An interactive benefit run website for cancer research for the team at Signify",
       period: "2025",
-      tags: ["Typescript", "GSAP"],
+      tags: ["Typescript", "GSAP", "Tailwind", "Figma"],
       links: [
         { label: "Live", href: "https://run4charity.be" },
         {
@@ -51,7 +51,7 @@ export const DATA = {
       image: "/images/run4charity.png",
     },
     {
-      title: "Learning app (Mobile) -Work in progress-",
+      title: "Learning app (Mobile) -work in progress-",
       description:
         "React Native/Expo MVP: take a photo, OCR the text, highlight parts to get explanations, translations, and TTS. This was built to aid me with learning German.",
       period: "2025",
@@ -81,22 +81,6 @@ export const DATA = {
       ],
       featured: true,
       image: "/images/weeklynews.png",
-    },
-    {
-      title: "Run 4 Charity",
-      description:
-        "A responsive and interactive website made for a charity benefit run.",
-      period: "2025",
-      tags: ["Typescript", "GSAP"],
-      links: [
-        { label: "Live", href: "https://run4charity.be" },
-        {
-          label: "Code",
-          href: "https://github.com/Mitch-creates/ktk-website",
-        },
-      ],
-      featured: true,
-      image: "/images/run4charity.png",
     },
     // {
     //   title: "Blogging website",
