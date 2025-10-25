@@ -24,6 +24,12 @@ function Header() {
           </Link>
           <Link
             className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
+            to="/projects"
+          >
+            Projects
+          </Link>
+          <Link
+            className="tracking-tighter text-slate-950 text-sm font-mono font-semibold"
             to="/contact"
           >
             Contact
