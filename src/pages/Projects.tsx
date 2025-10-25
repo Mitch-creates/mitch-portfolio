@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="px-4 md:px-0 pt-[20vh]">
       <h1 className="text-3xl font-semibold text-slate-900 mb-6 pb-8 border-b border-slate-200">
-        My projects
+        My projects.
       </h1>
       <div className="mt-8">
         {DATA.projects.map((project) => (
