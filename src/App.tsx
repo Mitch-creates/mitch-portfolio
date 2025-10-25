@@ -11,13 +11,16 @@ import { useState } from "react";
 
 function App() {
   const [showIntroAnimation, setShowIntroAnimation] = useState(true);
+  async function handleIntroComplete() {
+    setShowIntroAnimation(false);
+  }
   return (
     <>
       {showIntroAnimation && (
-        <IntroAnimation onComplete={() => setShowIntroAnimation(false)} />
+        <IntroAnimation onComplete={handleIntroComplete} />
       )}
       <BrowserRouter>
-        <div className="max-w-2xl lg:max-w-xl mx-auto">
+        <div className="reveal-page max-w-2xl lg:max-w-xl mx-auto opacity-0">
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />

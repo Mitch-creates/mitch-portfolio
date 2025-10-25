@@ -1,12 +1,17 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-green: #90ee90;
+  --color-brand-pink: #d86f92;
+}
+
 @layer base {
   body {
     @apply bg-slate-50 font-mono;
   }
   ::selection {
     background-color: #90ee90;
-    color: palevioletred;
+    color: #d86f92;
   }
 
   ::-moz-selection {
