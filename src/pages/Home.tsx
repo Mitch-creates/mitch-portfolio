@@ -57,7 +57,7 @@ function Home() {
                 <div className="relative rounded-xl mb-4 aspect-video overflow-hidden">
                   <img
                     loading="lazy"
-                    className="rounded-xl bg-cover shadow-xl"
+                    className="object-cover rounded-xl bg-cover shadow-xl"
                     src={project.image || "/images/coming_soon.jpg"}
                     alt={`${project.title} Thumbnail`}
                     width="450"
