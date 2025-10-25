@@ -10,7 +10,10 @@ function Home() {
       {/* Hero Section */}
       <section className="mb-16 pb-16 border-b border-slate-200">
         <h1 className="pb-4 text-3xl md:text-4xl font-semibold text-slate-900">
-          Moin, I'm Michiel.
+          <span data-animate="reveal-1">Moin</span>
+          <span data-animate="reveal-2">
+            , I'm Michiel<span>.</span>
+          </span>
           <span className="block text-xl md:text-2xl text-pastel-blue font-normal text-slate-600">
             A Developer from Belgium based in Hamburg.
           </span>
