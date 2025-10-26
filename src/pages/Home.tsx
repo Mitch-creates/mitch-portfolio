@@ -55,6 +55,8 @@ function Home() {
                     setActiveVideo(project.demoPath);
                   }
                 }}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="relative rounded-xl mb-4 aspect-video overflow-hidden">
                   <img

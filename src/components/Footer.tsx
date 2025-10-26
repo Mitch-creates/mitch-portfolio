@@ -7,10 +7,20 @@ function Footer() {
         &copy; 2024 - {new Date().getFullYear()} | Mitch Creates
       </p>
       <div className="flex flex-row gap-4">
-        <a href="https://github.com/Mitch-creates" className="text-sm">
+        <a
+          href="https://github.com/Mitch-creates"
+          className="text-sm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub size={16} />
         </a>
-        <a href="https://x.com/_mitchcreates" className="text-sm">
+        <a
+          href="https://x.com/_mitchcreates"
+          className="text-sm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTwitter size={16} />
         </a>
       </div>
