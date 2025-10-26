@@ -20,6 +20,8 @@ function Projects() {
                 href={
                   project.links?.find((link) => link.label === "Code")?.href
                 }
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithub className="w-10 h-10 hover:text-brand-green pr-4" />
               </a>
@@ -29,6 +31,8 @@ function Projects() {
                     project.links?.find((link) => link.label === "Live")?.href
                   }
                   className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Live Demo <HiOutlineArrowRight className="w-4 h-4" />
                 </a>
