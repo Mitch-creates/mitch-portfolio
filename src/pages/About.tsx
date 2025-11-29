@@ -14,7 +14,7 @@ function About() {
       <p className="text-lg text-slate-900 mb-8">
         I'm an easy-going and communicative person who values collaboration and
         clear communication. I value opportunities where I can bring my skills
-        and creativity together to contribute to meaningful projects.
+        and my creativity together to contribute to meaningful products.
       </p>
       <p className="text-lg text-slate-900 mb-8">
         Alongside my personal projects, I’ve contributed to professional
