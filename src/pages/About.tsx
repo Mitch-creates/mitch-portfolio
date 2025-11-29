@@ -23,8 +23,8 @@ function About() {
       </p>
 
       <a
-        href="/Documents/RESUME_Michiel_Van_de_Vyver.pdf"
-        download="RESUME_Michiel_Van_de_Vyver.pdf"
+        href="/Documents/Michiel_Van_de_Vyver_English_Resume.pdf"
+        download="Michiel_Van_de_Vyver_English_Resume.pdf"
         className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer mb-8"
       >
         <MdDownload className="w-4 h-4" /> Download My CV
