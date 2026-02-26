@@ -19,6 +19,46 @@ export const DATA = {
   email: "mitchcreates.contact@gmail.com",
   projects: [
     {
+      title: "AI News Summarizer",
+      description: "Automated setup for summarizing news articles using LLM.",
+      period: "2025",
+      tags: ["Python", "LLM", "Automation", "Gmail API"],
+      links: [
+        { label: "Live", href: "https://weeklynews.dev" },
+        {
+          label: "Code",
+          href: "https://github.com/Mitch-creates/ai-news-summarizer",
+        },
+      ],
+      featured: false,
+      image: "/images/weeklynews.png",
+    },
+    {
+      title: "Chatati",
+      description:
+        "Language exchange platform that helps people connect locally for real-world speaking practice.",
+      period: "2025-2026",
+      tags: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind",
+        "Prisma",
+        "PostgreSQL",
+        "Better Auth",
+        "Cloudflare R2",
+        "Upstash Redis",
+      ],
+      links: [
+        { label: "Live", href: "https://chatati.de" },
+        {
+          label: "Code",
+          href: "https://github.com/Mitch-creates/chatati",
+        },
+      ],
+      featured: true,
+      image: "/images/chatati.png",
+    },
+    {
       title: "Holiday Optimizer",
       description:
         "Web app that finds optimal 4–15 day holiday windows by combining public/company holidays with personal leave.",
@@ -35,7 +75,7 @@ export const DATA = {
       image: "/images/holidayoptimizer.png",
     },
     {
-      title: "Run 4 Charity -work in progress-",
+      title: "Run 4 Charity",
       description:
         "An interactive benefit run website for cancer research for the team at Signify",
       period: "2025",
@@ -51,7 +91,7 @@ export const DATA = {
       image: "/images/run4charity.png",
     },
     {
-      title: "Learning app (Mobile) -work in progress-",
+      title: "Learning app (Mobile)",
       description:
         "React Native/Expo MVP: take a photo, OCR the text, highlight parts to get explanations, translations, and TTS. This was built to aid me with learning German.",
       period: "2025",
@@ -67,21 +107,7 @@ export const DATA = {
       demoPath: "/videos/learningapp-demo.mp4",
       image: "/images/play-demo-learningapp.png",
     },
-    {
-      title: "AI News Summarizer",
-      description: "Automated setup for summarizing news articles using LLM.",
-      period: "2025",
-      tags: ["Python", "LLM", "Automation", "Gmail API"],
-      links: [
-        { label: "Live", href: "https://weeklynews.dev" },
-        {
-          label: "Code",
-          href: "https://github.com/Mitch-creates/ai-news-summarizer",
-        },
-      ],
-      featured: true,
-      image: "/images/weeklynews.png",
-    },
+
     // {
     //   title: "Blogging website",
     //   description:

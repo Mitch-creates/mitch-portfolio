@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import LegalNotice from "./pages/LegalNotice";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import IntroAnimation from "./components/IntroAnimation";
@@ -27,6 +29,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/legal-notice" element={<LegalNotice />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
           <Footer />
         </div>

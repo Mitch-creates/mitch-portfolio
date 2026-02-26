@@ -14,7 +14,7 @@ function Home() {
           Moin, I'm Michiel
         </h1>
         <span className="block text-xl md:text-2xl font-normal text-slate-600 pb-10">
-          A Developer from Belgium soon based in Hamburg.
+          A Developer from Belgium based in Hamburg.
         </span>
 
         <p className="pb-4 md:pt-0 pt-10 text-lg text-slate-900">
