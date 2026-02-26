@@ -34,14 +34,30 @@ function PrivacyPolicy() {
           2. Hosting and Server Log Files
         </h2>
         <p className="text-slate-800 mb-2">
-          This website is hosted via Netlify. When visiting the website,
-          technically necessary data (for example IP address, timestamp, requested
-          resource, and browser information) may be processed to enable operation,
-          security, and delivery of the site.
+          This website is hosted by Netlify (Netlify, Inc.). When you visit this
+          site, technically necessary log data may be processed, for example IP
+          address, date and time of the request, requested resource, referrer,
+          browser information, and operating system.
         </p>
-        <p className="text-slate-800">
+        <p className="text-slate-800 mb-2">
           Legal basis: Article 6(1)(f) GDPR (legitimate interest in secure and
           stable website operation).
+        </p>
+        <p className="text-slate-800 mb-2">
+          Netlify acts as a processor for hosting. Data processing may also take
+          place outside the EU/EEA. In such cases, transfers are typically based
+          on appropriate safeguards, such as Standard Contractual Clauses.
+        </p>
+        <p className="text-slate-800">
+          More information:{" "}
+          <a
+            className="underline break-all hover:bg-brand-green hover:text-brand-pink transition-colors duration-200"
+            href="https://www.netlify.com/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.netlify.com/privacy/
+          </a>
         </p>
       </section>
 
@@ -86,8 +102,11 @@ function PrivacyPolicy() {
           6. Data Retention
         </h2>
         <p className="text-slate-800">
-          Personal data is only stored for as long as necessary for the stated
-          purposes or as required by legal retention obligations.
+          Personal data is stored only for as long as required for the stated
+          purpose. Server log data is generally retained for a short technical
+          period by the hosting provider. Communication data is retained only for
+          as long as needed to process your request and, where applicable, fulfill
+          legal retention obligations.
         </p>
       </section>
 
@@ -98,7 +117,9 @@ function PrivacyPolicy() {
         <p className="text-slate-800 mb-2">
           Under the GDPR, you have the right to access (Art. 15), rectification
           (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data
-          portability (Art. 20), and objection (Art. 21).
+          portability (Art. 20), and objection (Art. 21). If processing is based
+          on consent, you can withdraw consent at any time with effect for the
+          future.
         </p>
         <p className="text-slate-800">
           You also have the right to lodge a complaint with a data protection

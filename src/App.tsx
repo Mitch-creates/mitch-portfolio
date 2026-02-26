@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,7 +10,17 @@ import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import IntroAnimation from "./components/IntroAnimation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   const [showIntroAnimation, setShowIntroAnimation] = useState(true);
@@ -23,6 +33,7 @@ function App() {
         <IntroAnimation onComplete={handleIntroComplete} />
       )}
       <BrowserRouter>
+        <ScrollToTop />
         <div className="reveal-page max-w-2xl lg:max-w-xl mx-auto opacity-0">
           <Header />
           <Routes>
