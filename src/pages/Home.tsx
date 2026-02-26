@@ -50,7 +50,7 @@ function Home() {
                   <div className="relative rounded-xl mb-4 aspect-video overflow-hidden">
                     <img
                       loading="lazy"
-                      className="object-cover rounded-xl bg-cover shadow-xl"
+                      className="h-full w-full object-cover rounded-xl bg-cover shadow-xl"
                       src={project.image || "/images/coming_soon.jpg"}
                       alt={`${project.title} Thumbnail`}
                       width="450"
@@ -81,7 +81,7 @@ function Home() {
                 return (
                   <a
                     key={project.title}
-                    className="flex flex-col justify-center transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
+                    className="h-[430px] flex flex-col justify-start transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
                     href={liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -96,7 +96,7 @@ function Home() {
                   <button
                     key={project.title}
                     type="button"
-                    className="text-left flex flex-col justify-center transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
+                    className="h-[430px] text-left flex flex-col justify-start transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
                     onClick={() => setActiveVideo(project.demoPath ?? null)}
                   >
                     {cardContent}
@@ -107,7 +107,7 @@ function Home() {
               return (
                 <div
                   key={project.title}
-                  className="flex flex-col justify-center bg-slate-100 rounded-xl p-8"
+                  className="h-[430px] flex flex-col justify-start bg-slate-100 rounded-xl p-8"
                 >
                   {cardContent}
                 </div>

@@ -13,7 +13,7 @@ const TIMINGS_MS = {
   flipOut: 100,
   loaderFade: 100,
   pageReveal: 200,
-  headerReveal: 100,
+  headerReveal: 300,
 };
 
 const scaledMs = (ms: number) => ms * INTRO_SPEED_MULTIPLIER;
