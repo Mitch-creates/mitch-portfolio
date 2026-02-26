@@ -40,53 +40,79 @@ function Home() {
         <div className="lg:w-[170%] lg:-ml-[35%] grid grid-cols-1 md:grid-cols-2 gap-8 grid-flow-dense mt-16 mb-6">
           {DATA.projects
             .filter((project) => project.featured)
-            .map((project) => (
-              <a
-                key={project.title}
-                className="flex flex-col justify-center transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
-                href={
-                  project.links?.[0]?.label === "Live"
-                    ? project.links[0].href
-                    : ""
-                }
-                onClick={(e) => {
-                  if (project.hasDemo && project.demoPath) {
-                    e.preventDefault();
-                    setActiveVideo(project.demoPath);
-                  }
-                }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="relative rounded-xl mb-4 aspect-video overflow-hidden">
-                  <img
-                    loading="lazy"
-                    className="object-cover rounded-xl bg-cover shadow-xl"
-                    src={project.image || "/images/coming_soon.jpg"}
-                    alt={`${project.title} Thumbnail`}
-                    width="450"
-                    height="240"
-                    data-nimg="1"
-                  />
+            .map((project) => {
+              const liveLink = project.links?.find(
+                (link) => link.label === "Live",
+              )?.href;
+
+              const cardContent = (
+                <>
+                  <div className="relative rounded-xl mb-4 aspect-video overflow-hidden">
+                    <img
+                      loading="lazy"
+                      className="object-cover rounded-xl bg-cover shadow-xl"
+                      src={project.image || "/images/coming_soon.jpg"}
+                      alt={`${project.title} Thumbnail`}
+                      width="450"
+                      height="240"
+                      data-nimg="1"
+                    />
+                  </div>
+                  <h3 className="text-lg font-semibold text-slate-900">
+                    {project.title}
+                  </h3>
+                  <h3 className="text-sm text-slate-600">
+                    {project.description}
+                  </h3>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {project.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs  text-slate-800 pr-2 py-1 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </>
+              );
+
+              if (liveLink) {
+                return (
+                  <a
+                    key={project.title}
+                    className="flex flex-col justify-center transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
+                    href={liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {cardContent}
+                  </a>
+                );
+              }
+
+              if (project.hasDemo && project.demoPath) {
+                return (
+                  <button
+                    key={project.title}
+                    type="button"
+                    className="text-left flex flex-col justify-center transition-colors bg-slate-100 hover:bg-slate-200 rounded-xl p-8 cursor-pointer"
+                    onClick={() => setActiveVideo(project.demoPath ?? null)}
+                  >
+                    {cardContent}
+                  </button>
+                );
+              }
+
+              return (
+                <div
+                  key={project.title}
+                  className="flex flex-col justify-center bg-slate-100 rounded-xl p-8"
+                >
+                  {cardContent}
                 </div>
-                <h3 className="text-lg font-semibold text-slate-900">
-                  {project.title}
-                </h3>
-                <h3 className="text-sm text-slate-600">
-                  {project.description}
-                </h3>
-                <div className="mt-2 flex flex-wrap gap-2">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs  text-slate-800 pr-2 py-1 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </a>
-            ))}
+              );
+            })}
         </div>
         <Link
           to="/projects"
