@@ -97,6 +97,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
         return;
       }
 
+      // Stage 6: Reveal the header logo(s)
       const revealHeader = globalAnimate(
         "[data-animate='reveal-1']",
         { opacity: 1, rotateY: 0 },
