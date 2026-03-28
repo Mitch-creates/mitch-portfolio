@@ -10,16 +10,21 @@ function Home() {
     <main className="px-4 md:px-0 pt-[20vh]">
       {/* Hero Section */}
       <section className="mb-16 pb-16 border-b border-slate-300">
-        <h1 className=" text-3xl md:text-4xl font-semibold text-slate-900">
-          Moin, I'm Michiel
-        </h1>
-        <span className="block text-xl md:text-2xl font-normal text-slate-600 pb-10">
-          A Developer from Belgium based in Hamburg.
+        <div className="flex items-center gap-3 mb-6">
+          <h1 className="text-3xl md:text-4xl font-semibold text-slate-900">
+            Moin, I'm Michiel
+          </h1>
+          <span className="inline-flex items-center gap-1.5 text-xs font-mono bg-emerald-100 text-emerald-700 px-2.5 py-1 rounded-full">
+            <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
+            Open to work
+          </span>
+        </div>
+        <span className="block text-xl md:text-2xl font-normal text-slate-600 pb-8">
+          AI-native developer based in Hamburg, shipping fast with Cursor.
         </span>
 
-        <p className="pb-4 md:pt-0 pt-10 text-lg text-slate-900">
-          Curiosity-fueled developer blending creativity and modern technologies
-          to build meaningful digital experiences.
+        <p className="pb-4 text-lg text-slate-900">
+          I build full-stack apps that solve real problems, from language exchange platforms to AI-powered tools. If you need someone who orchestrates AI to ship, let's talk.
         </p>
         <Link
           to="/about"
