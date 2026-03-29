@@ -51,11 +51,11 @@ function Projects() {
                 {liveLink && (
                 <a
                   href={liveLink}
-                  className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer"
+                  className="inline-flex items-center gap-2 text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer group"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Live Demo <HiOutlineArrowRight className="w-4 h-4" />
+                  Live Demo <HiOutlineArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
                 </a>
                 )}
               </div>

@@ -25,9 +25,9 @@ function About() {
       <a
         href="/Documents/Michiel_Van_de_Vyver_English_Resume.pdf"
         download="Michiel_Van_de_Vyver_English_Resume.pdf"
-        className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer mb-8"
+        className="inline-flex items-center gap-2 text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer mb-8 group"
       >
-        <MdDownload className="w-4 h-4" /> Download My CV
+        <MdDownload className="w-4 h-4 transition-transform duration-200 group-hover:scale-110" /> Download My CV
       </a>
     </div>
   );

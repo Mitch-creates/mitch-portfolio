@@ -14,7 +14,7 @@ function Home() {
           <h1 className="text-3xl md:text-4xl font-semibold text-slate-900">
             Moin, I'm Michiel
           </h1>
-          <span className="inline-flex items-center gap-1.5 text-xs font-mono bg-emerald-100 text-emerald-700 px-2.5 py-1 rounded-full">
+          <span className="inline-flex items-center gap-1.5 text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200 px-2.5 py-1 rounded-full shadow-sm">
             <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
             Open to work
           </span>
@@ -28,10 +28,10 @@ function Home() {
         </p>
         <Link
           to="/about"
-          className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer"
+          className="inline-flex items-center gap-2 text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer group"
         >
           Learn more
-          <HiOutlineArrowRight className="w-4 h-4" />
+          <HiOutlineArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
         </Link>
       </section>
       {/* Projects Section */}
@@ -52,18 +52,19 @@ function Home() {
 
               const cardContent = (
                 <>
-                  <div className="relative rounded-xl mb-4 aspect-video overflow-hidden">
+                  <div className="relative rounded-xl mb-4 aspect-video overflow-hidden group">
                     <img
                       loading="lazy"
-                      className="h-full w-full object-cover rounded-xl shadow-xl"
+                      className="h-full w-full object-cover rounded-xl shadow-lg transition-transform duration-300 group-hover:scale-105"
                       src={project.image || "/images/coming_soon.jpg"}
                       alt={`${project.title} Thumbnail`}
                       width="450"
                       height="240"
                       data-nimg="1"
                     />
+                    <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-slate-900/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </div>
-                  <h3 className="text-lg font-semibold text-slate-900 mb-1">
+                  <h3 className="text-lg font-semibold text-slate-900 mb-1 group-hover:text-brand-pink transition-colors duration-200">
                     {project.title}
                   </h3>
                   <p className="text-sm text-slate-600 leading-relaxed">
@@ -73,7 +74,7 @@ function Home() {
                     {project.tags.slice(0, 4).map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs bg-slate-200 text-slate-700 px-2 py-0.5 rounded-full font-mono"
+                        className="text-xs bg-slate-100 text-slate-600 border border-slate-200 px-2 py-0.5 rounded-full font-mono"
                       >
                         {tag}
                       </span>
@@ -91,7 +92,7 @@ function Home() {
                 return (
                   <a
                     key={project.title}
-                    className="flex flex-col justify-start transition-all duration-200 bg-slate-100 hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 rounded-xl p-6 cursor-pointer border border-transparent hover:border-slate-300"
+                    className="group flex flex-col justify-start transition-all duration-300 bg-white hover:bg-slate-50 rounded-xl p-6 cursor-pointer border border-slate-200 hover:border-brand-green hover:shadow-xl hover:shadow-brand-green/10 hover:-translate-y-1"
                     href={liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -106,7 +107,7 @@ function Home() {
                   <button
                     key={project.title}
                     type="button"
-                    className="text-left flex flex-col justify-start transition-all duration-200 bg-slate-100 hover:bg-slate-200 hover:shadow-lg hover:-translate-y-1 rounded-xl p-6 cursor-pointer border border-transparent hover:border-slate-300"
+                    className="group text-left flex flex-col justify-start transition-all duration-300 bg-white hover:bg-slate-50 rounded-xl p-6 cursor-pointer border border-slate-200 hover:border-brand-green hover:shadow-xl hover:shadow-brand-green/10 hover:-translate-y-1"
                     onClick={() => setActiveVideo(project.demoPath ?? null)}
                   >
                     {cardContent}
@@ -117,7 +118,7 @@ function Home() {
               return (
                 <div
                   key={project.title}
-                  className="flex flex-col justify-start bg-slate-100 rounded-xl p-6 border border-slate-200"
+                  className="group flex flex-col justify-start bg-white rounded-xl p-6 border border-slate-200"
                 >
                   {cardContent}
                 </div>
@@ -126,10 +127,10 @@ function Home() {
         </div>
         <Link
           to="/projects"
-          className="inline-flex items-center gap-2 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer"
+          className="inline-flex items-center gap-2 text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer group"
         >
           View all projects
-          <HiOutlineArrowRight className="w-4 h-4" />
+          <HiOutlineArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
         </Link>
       </section>
 

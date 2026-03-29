@@ -14,7 +14,7 @@ function Contact() {
             LinkedIn
           </h2>
           <a
-            className="text-slate-700 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
+            className="text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
             href="https://www.linkedin.com/in/michiel-van-de-vyver/"
             target="_blank"
             rel="noopener noreferrer"
@@ -27,7 +27,7 @@ function Contact() {
             Twitter
           </h2>
           <a
-            className="text-slate-700 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
+            className="text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
             href="https://twitter.com/_mitchcreates"
             target="_blank"
             rel="noopener noreferrer"
@@ -40,7 +40,7 @@ function Contact() {
             Email
           </h2>
           <a
-            className="text-slate-700 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
+            className="text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
             href="mailto:mitchcreates.contact@gmail.com"
           >
             mitchcreates.contact@gmail.com
@@ -51,7 +51,7 @@ function Contact() {
             GitHub
           </h2>
           <a
-            className="text-slate-700 hover:bg-brand-green hover:text-brand-pink transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
+            className="text-brand-pink hover:text-brand-green transition-colors duration-200 cursor-pointer inline-block w-fit underline md:no-underline"
             href="https://github.com/mitch-creates"
             target="_blank"
             rel="noopener noreferrer"

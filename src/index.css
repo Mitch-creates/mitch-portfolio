@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-green: #90ee90;
-  --color-brand-pink: #d86f92;
+  --color-brand-green: #4ade80;
+  --color-brand-pink: #ec4899;
 }
 
 @layer base {
   body {
     @apply bg-slate-50 font-mono;
+    background-image: radial-gradient(ellipse at top, rgba(74, 222, 128, 0.06) 0%, transparent 60%);
+    min-height: 100vh;
   }
   ::selection {
-    background-color: #90ee90;
-    color: #d86f92;
+    background-color: #4ade80;
+    color: #831843;
   }
 
   ::-moz-selection {
-    background-color: #90ee90;
-    color: whitesmoke;
+    background-color: #4ade80;
+    color: #831843;
   }
 }
