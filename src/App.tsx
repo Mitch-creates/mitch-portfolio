@@ -34,7 +34,7 @@ function App() {
       )}
       <BrowserRouter>
         <ScrollToTop />
-        <div className="reveal-page w-full max-w-6xl mx-auto opacity-0 px-4 md:px-8 lg:pl-80 lg:pr-12 xl:pl-96 xl:pr-16">
+        <div className="reveal-page w-full max-w-6xl opacity-0 px-4 md:px-8 lg:ml-72 lg:px-12 xl:ml-80 xl:px-16">
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
