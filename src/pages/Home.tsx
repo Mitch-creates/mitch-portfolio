@@ -7,11 +7,11 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 function Home() {
   const [activeVideo, setActiveVideo] = useState<string | null>(null);
   return (
-    <main className="px-4 md:px-0 pt-[20vh]">
+    <main className="pt-[16vh] md:pt-[18vh]">
       {/* Hero Section */}
-      <section className="mb-16 pb-16 border-b border-slate-300">
-        <div className="flex items-center gap-3 mb-6">
-          <h1 className="text-3xl md:text-4xl font-semibold text-slate-900">
+      <section className="mb-20 pb-16 border-b border-slate-300 max-w-3xl">
+        <div className="flex items-center gap-3 mb-6 flex-wrap">
+          <h1 className="text-4xl md:text-5xl font-semibold text-slate-900 leading-tight">
             Moin, I'm Michiel
           </h1>
           <span className="inline-flex items-center gap-1.5 text-xs font-mono bg-emerald-50 text-emerald-600 border border-emerald-200 px-2.5 py-1 rounded-full shadow-sm">
@@ -19,11 +19,11 @@ function Home() {
             Open to work
           </span>
         </div>
-        <span className="block text-xl md:text-2xl font-normal text-slate-600 pb-8">
+        <span className="block text-2xl md:text-3xl font-normal text-slate-600 pb-8 leading-snug max-w-2xl">
           AI-native developer based in Hamburg, shipping fast with Cursor.
         </span>
 
-        <p className="pb-4 text-lg text-slate-900">
+        <p className="pb-4 text-lg md:text-xl text-slate-900 max-w-2xl leading-relaxed">
           I build full-stack apps that solve real problems, from language exchange platforms to AI-powered tools. If you need someone who orchestrates AI to ship, let's talk.
         </p>
         <Link
@@ -35,7 +35,7 @@ function Home() {
         </Link>
       </section>
       {/* Projects Section */}
-      <section className="mb-16">
+      <section className="mb-16 max-w-5xl">
         <h2 className="text-xl md:text-2xl font-semibold text-slate-900 mb-4 tracking-tighter">
           Personal Projects.
         </h2>
